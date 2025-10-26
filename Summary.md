@@ -99,7 +99,12 @@ overlapping integrity verification:
 `.concat(verify_integrity=False`
 
 
-Merging ordered and time series data
+Merging ordered and time series data:
+When dealing with time series, using ordered is a good option, especially to deal with missing data.
+`.merge_ordered()
 
+forward fill:  `pd.merge_ordered(aapl, mcd, on='date', suffixes=('_aapl','_mcd'), fill_method='ffill')`
+
+`merge_asof()`
 
 
