@@ -121,5 +121,8 @@ Selecting data with .query()
 
 Reshaping data with .melt() - unpivot table
 
-Wide format: 
+Data wide format: pivoted table. Easier to read by people.
+Data long format: unpivoted table. More acessable by computers.
+
+`social_fin_tall = social_fin.melt(id_vars=['financial','company'], value_vars=['2018','2017'], var_name='year', value_name='dollars')
 
