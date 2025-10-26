@@ -174,3 +174,8 @@ All statistics in one go:
 
 ### 06.2 Random numbers and probability
 
+Sampling:
+	setting a random seed - keeping the same result when running np.sample:
+	`np.random.seed(10)`
+	`sales_counts.sample()` gets the same result.
+	
