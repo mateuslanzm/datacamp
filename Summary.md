@@ -40,6 +40,17 @@ Cons: violate the "tidy data" principles (each variable forms a column, each obs
 
 ### 04.3. Visualizating your DataFrame
 
-Histograms: used to visualize the number of `df.hist(), plt.show()`
+Histograms: used to visualize the number of observations and distribution over a variable: `df.hist(), plt.show()`
 
-`
+Barplots: mostly used to compare values between variables `df.plot(kind='bar'), plt.show()`
+
+Lineplots: mostly used to identify change of values over time `df.plot(kind='line'), plt.show()`
+
+Scatterplot: mostly used to identify the relation between two variables `df.plot(kind='scatter')
+
+Detecting missing values:
+	`df.isna().any()`
+
+Creating DataFrames:
+	By list of dictionaries: creates row by row, ex.: `list_of_dic = [{'name':'Mateus','weight':'1.73'},...]
+	By dictionary of lists: creates column by column, ex.: `dict_of_lists = {'name':'Mateus','Lucas','weight':'1.73','1.78'}
