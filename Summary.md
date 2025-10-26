@@ -178,4 +178,15 @@ Sampling:
 	setting a random seed - keeping the same result when running np.sample:
 	`np.random.seed(10)`
 	`sales_counts.sample()` gets the same result.
+
+Probability distributions:
+
+Discrete distributions:
+	Law of large numbers: the mean of large samples tend to the expected value of theoretical probability distribution
+
+Continuous distributions:
+	continuous uniform distribution: 
+	`from scipy.stats import uniform
+	Probability P(waited value <=7): `uniform.cdf(waited value,min,max) 
+	Generating random numbers according to uniform distribution: `uniform.rvs(min, max, size=10)
 	
