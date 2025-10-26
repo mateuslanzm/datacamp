@@ -29,4 +29,17 @@ Pivot tables
 	Multiple statistics: dogs.pivot_table(values="weight_kg", index="color", aggfunc=["mean", "median"])
 	Summing with pivot tables: dogs.pivot_table(values="weight_kg", index="color", columns="breed", fill_value=0, margins=True)
 
-### 04.3. Slices
+### 04.3. Slicing and indexing DataFrames
+Indexing: to locate by index `df.loc[['value1,value2']]`
+
+Subset inner levels with a list of tuples: `dogs_ind3.loc[[("Labrador", "Brown"), ("Chihuahua", "Tan")]]`
+
+Should I index values?
+Pros: sometimes it facilitates the data manipulation with pre-defined functions.
+Cons: violate the "tidy data" principles (each variable forms a column, each observation forms a row, and each value is in its own cell)
+
+### 04.3. Visualizating your DataFrame
+
+Histograms: used to visualize the number of `df.hist(), plt.show()`
+
+`
