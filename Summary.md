@@ -142,8 +142,14 @@ Categorical (qualitative):
 	Ordinal (Ordered)
 
 Measures of center:
-	Mean:
-	Median
+	Mean: works better for symmetrical data `np.mean()
+	Median: works better for unsymmetrical data `np.median()
+	Mode: most appearance `np.mode()
+
+Measures of spread:
+	Variance: average distance of each point to the mean `np.var( ddof=1) ` ddof=1 - for sample, hard to understand since the value is squared ^2
+	Standard deviation: sqrt of the variance - the dimension is the same of the observations, easier to understand `np.std(ddof=1)` ddof=1 for sample
+	Mean absolute deviation (MAD): absolute distance of each point to the mean and take the mean of thes
 
 
 
