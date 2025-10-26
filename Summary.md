@@ -54,3 +54,13 @@ Detecting missing values:
 Creating DataFrames:
 	By list of dictionaries: creates row by row, ex.: `list_of_dic = [{'name':'Mateus','weight':'1.73'},...]
 	By dictionary of lists: creates column by column, ex.: `dict_of_lists = {'name':'Mateus','Lucas','weight':'1.73','1.78'}
+
+# 05. Joining data with Pandas
+
+## 05.1 Basics
+Setting suffixes: `wards_census = wards.merge(census, on='ward', suffixes=('_ward','_cen'))`
+
+merging a table to itself: `original_sequels = sequels.merge(sequels, left_on='sequel', right_on='id', how='left', suffixes=('_org','_seq'))`
+- hierarchical relationships
+- sequential relationtships
+- Graph data
