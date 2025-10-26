@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "b993df2b4924c3ae",
@@ -171,7 +171,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "565ded3c809ec516",
+  "active": "ba4fdcddeb56230f",
   "lastOpenFiles": [
     "README.md"
   ]

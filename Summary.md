@@ -128,5 +128,22 @@ Data long format: unpivoted table. More acessable by computers.
 
 # 06. Introduction to statistics with Python
 
+### 06.1 Summary statistics
+Descriptive statistics: describe and summarize data.
+Inferential statistics: use a sample to inference something about a population.
+
+Data types:
+
+Numeric (quantative):
+	Continuous
+	Discrete
+Categorical (qualitative):
+	Nominal (Unordered)
+	Ordinal (Ordered)
+
+Measures of center:
+	Mean:
+	Median
+
 
 
