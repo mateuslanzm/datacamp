@@ -65,7 +65,7 @@ merging a table to itself: `original_sequels = sequels.merge(sequels, left_on='s
 - sequential relationtships
 - Graph data
 
-Advanced merging and concatenating
+## 05.3 Advanced merging and concatenating
 
 Filtering joins: 
 
@@ -99,7 +99,7 @@ overlapping integrity verification:
 `.concat(verify_integrity=False`
 
 
-Merging ordered and time series data:
+## 05.4 Merging ordered and time series data:
 When dealing with time series, using ordered is a good option, especially to deal with missing data.
 `.merge_ordered()
 
@@ -125,4 +125,8 @@ Data wide format: pivoted table. Easier to read by people.
 Data long format: unpivoted table. More acessable by computers.
 
 `social_fin_tall = social_fin.melt(id_vars=['financial','company'], value_vars=['2018','2017'], var_name='year', value_name='dollars')
+
+# 06. Introduction to statistics with Python
+
+
 
