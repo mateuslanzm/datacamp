@@ -149,7 +149,28 @@ Measures of center:
 Measures of spread:
 	Variance: average distance of each point to the mean `np.var( ddof=1) ` ddof=1 - for sample, hard to understand since the value is squared ^2
 	Standard deviation: sqrt of the variance - the dimension is the same of the observations, easier to understand `np.std(ddof=1)` ddof=1 for sample
-	Mean absolute deviation (MAD): absolute distance of each point to the mean and take the mean of thes
+	Mean absolute deviation (MAD): absolute distance of each point to the mean and take the mean of these values. 
+	SD vs MAD:
+		SD. are more usual.
+		SD: penalizes longer distances more than shorter ones.
+		MAD: Penalizes each distance equally.
 
+Quantiles (percentiles):
+	Splits up the data on some number of equal parts. `np.quantile(df['column1], 0.5) `is equal to the median.
+	Using `np.linspace()
+	`np.quantile(df['column'], np.linspace(start, stop, num))
 
+Interquartile range (IQR) - high of box on boxplot:
+	Distance between the 25 and 75 percentiles.
+	IQR = Q75 - Q25.
+	`from scipy.stats import iqr 
+	`iqr(df['column'])
+
+Outliers:
+	Definition: data < Q1 - 1.5 x IQR or data > Q3 + 1.5 IQR
+
+All statistics in one go:
+`df['column'].describe()'
+
+### 06.2 Random numbers and probability
 
