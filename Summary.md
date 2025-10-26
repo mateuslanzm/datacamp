@@ -64,3 +64,27 @@ merging a table to itself: `original_sequels = sequels.merge(sequels, left_on='s
 - hierarchical relationships
 - sequential relationtships
 - Graph data
+
+Advanced merging and concatenating
+
+Filtering joins: 
+
+semi joins: 
+- returns the intersection
+- Returns rows only from the left table, not the right
+- No duplicates
+
+	Step 1: `genres_tracks = genres.merge(top_tracks, on='gid')`
+	Step 2: `genres['gid'].isin(genres_tracks['gid'])`
+	Step 3: `top_genres = genres[genres['gid'].isin(genres_tracks['gid'])]`
+
+anti joins:
+- returns the left table, excluding the intersection
+- returns only from the left table, not the right
+
+	Step 1: `genres_tracks = genres.merge(top_tracks, on='gid', how='left', indicator=True)`
+	Step 2: `gid_list = genres_tracks.loc[genres_tracks['_merge'] == 'left_only', 'gid']`
+	Step 3: `non_top_genres = genres[genres['gid'].isin(gid_list)]`
+	
+
+
