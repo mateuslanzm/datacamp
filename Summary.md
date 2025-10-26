@@ -105,6 +105,21 @@ When dealing with time series, using ordered is a good option, especially to dea
 
 forward fill:  `pd.merge_ordered(aapl, mcd, on='date', suffixes=('_aapl','_mcd'), fill_method='ffill')`
 
+Merge using the nearest value (DataFrame must be sorted).
 `merge_asof()`
+- DataFrame must be sorted.
+- similar to merge_ordered() left join
+- match on the nearest key column and not exact matches - merged "on" columns must be sorted.
+- The nearest forward or backward (Default) can be setted.
+- 
+`pd.merge_asof(visa, ibm, on=['date_time'], suffixes=('_visa','_ibm'), direction='forward')`
 
+Selecting data with .query()
+
+`stocks.query('nike > 96 or disney < 98')
+`stocks_long.query('stock=="disney" or (stock=="nike" and close < 90)')`
+
+Reshaping data with .melt() - unpivot table
+
+Wide format: 
 
