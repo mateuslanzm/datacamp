@@ -85,6 +85,21 @@ anti joins:
 	Step 1: `genres_tracks = genres.merge(top_tracks, on='gid', how='left', indicator=True)`
 	Step 2: `gid_list = genres_tracks.loc[genres_tracks['_merge'] == 'left_only', 'gid']`
 	Step 3: `non_top_genres = genres[genres['gid'].isin(gid_list)]`
-	
+
+Concatenate tables vertically:
+
+Combining tables and keeping track of the data: `pd.concat([inv_jan, inv_feb, inv_mar], ignore_index=False, keys=['jan','feb','mar'])`
+
+Verifying integrity:
+
+`.merge(validate=None)`
+	`'one_to_one''one_to_many''many_to_one''many_to_many'`
+
+overlapping integrity verification:
+`.concat(verify_integrity=False`
+
+
+Merging ordered and time series data
+
 
 
