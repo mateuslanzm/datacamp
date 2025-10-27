@@ -244,4 +244,28 @@ Exponential distribution:
 	2 minutes in this case.
 	Probability of P(wait<1 min):
 	`expon.cdf(1, scale=2)
-Student
+
+(Student's) t-distribution:
+	Similar to Normal distribution
+	Degrees of freedom - as the df increases, it approaches the normal distribution (lower, higher sd)
+
+Log-normal distribution:
+	Variable whose logarithm is normally distributed.
+	Length of chess games
+	Adult blood pressure.
+
+### 06.4 Correlation and Experimental Design
+
+Relationship between two variables:
+
+Visualizing relationship with seaborn:
+`import seaborn as sns
+`sns.scatterplot(x='var1',y='var2',data=df, ci=None #trendline)
+`plt.show()
+
+Computing correlation (Pearson product-moment correlation (r) - most common):
+`df[column1].corr(df[column2])
+There's more than one way to calculate correlation. 
+
+Correlation caveats:
+	non-linear relationships.
