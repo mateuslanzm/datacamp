@@ -268,4 +268,12 @@ Computing correlation (Pearson product-moment correlation (r) - most common):
 There's more than one way to calculate correlation. 
 
 Correlation caveats:
-	non-linear relationships.
+	Correlation shouldn't be used blindly - visualize your data when possible (ex.: non-linear relationships have low linear correlation).
+	Log transformation can be used to bring the correlation to become linear.
+	sqrt (^1/2), reciprocal (1/x)...
+	Always try to transform data so the correlation become linear, because there's a handful number of techniques for dealing with linear relationships.
+	Correlation doesn't not imply causation.
+	Confounding: a third variable (confounder) ex: correlation between coffee consumption and lung cancer. It seems there's a high correlation but no causation, only association. The causation is caused by a third variable (smoking) associated with coffee drinking and causating lung cancer.
+
+ Design of experiments (DOE):
+ Controlled experiments: divide the participants between Treatment group - apply changes and Control group - no changes. Compare between the effects to see if ther
