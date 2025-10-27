@@ -208,4 +208,20 @@ Binomial distribution:
 Normal distribution:
 	Symmetrical, área=1, curve never hits 0.
 	N(mean, sd).
-	Standard normal distribution ()	
+	Standard normal distribution (0, 1): 68% 1sd, 95% 2sd, 99.7% 3sd.
+	P(observation < 154 cm) = 
+	`from scipy.stats import norm
+	`norm.cdf(154, 161 - mean, 7 - sd)
+	What height are 90% of women shorter than?
+	`norm.ppf(0.9, 161, 7)
+	Generating random numbers:
+	`norm.rvs(161,7,size=10)
+
+The central limit theorem:
+	the sampling distribution will approach the normal distribution as the number of trials increases. Samples randomly and independently.
+
+The Poisson distribution:
+	Events appear to happen at a certain rate, but completely at random.
+	Probability of some # of events occurring in a period of time.
+	
+Rare events
