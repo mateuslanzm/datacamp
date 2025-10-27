@@ -186,7 +186,26 @@ Discrete distributions:
 
 Continuous distributions:
 	continuous uniform distribution: 
-	`from scipy.stats import uniform
-	Probability P(waited value <=7): `uniform.cdf(waited value,min,max) 
-	Generating random numbers according to uniform distribution: `uniform.rvs(min, max, size=10)
-	
+		`from scipy.stats import uniform
+		Probability P(waited value <=7): `uniform.cdf(waited value,min,max) 
+		Generating random numbers according to uniform distribution: `uniform.rvs(min, max, size=10)
+	Normal distribution:
+	Exponential distribution:
+
+Binomial distribution: 
+	Creating observations binomial in Python:
+	`from scipy.stats import binom
+	`binom.rvs(# of coins (n), probability of heads/success (p), size=# of trials)
+	ex.: `binom.rvs(3,0.5,size=10)
+	Result: list of the sums of each head observation: array([0, 3, 2, 1, 0, 3, 2, 1,...])
+	Probability of 7 heads? `binom.rvs(10, p=0.5, size=20)
+	P(heads=7) = `binom.pmf(7,10,0.5)
+	P(heads >7) = `binom.cdf(7,10,0.5)
+	Expected value = `n x p
+
+### 06.3 More distributions and the Central Limit Theorem
+
+Normal distribution:
+	Symmetrical, área=1, curve never hits 0.
+	N(mean, sd).
+	Standard normal distribution ()	
