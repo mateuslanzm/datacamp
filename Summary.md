@@ -222,6 +222,26 @@ The central limit theorem:
 
 The Poisson distribution:
 	Events appear to happen at a certain rate, but completely at random.
-	Probability of some # of events occurring in a period of time.
-	
-Rare events
+	Probability of some # of events occurring over a fixed period of time.
+	Lambda: average number of events per time interval.
+	Probability of a single value: if the average number of adoption per week is 8, what's the probability of 5 adoptions P(# adoptions = 5)?
+	`from scipy.stats import poisson
+	`poisson.pmf(5 -, 8 - lambda)
+	At least 5 P(# <=5)?
+	`poisson.cdf(5, 8)
+	Sampling:
+	`poisson.rvs(8, size=10)
+
+Exponential distribution:
+	Probability of time between Poisson events:
+	Probability of >1 day between adoptions
+	<10 minutos between restaurant arrivals
+	6-8 months between earthquakes
+	lambda(rate)
+	Continuous
+	Ex. on average, one customer service ticket is created every 2 minutes. So lambda = 0.5 customer service tickets created per minute.
+	Expected value: 1/lambda.
+	2 minutes in this case.
+	Probability of P(wait<1 min):
+	`expon.cdf(1, scale=2)
+Student
