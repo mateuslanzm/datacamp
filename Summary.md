@@ -276,4 +276,20 @@ Correlation caveats:
 	Confounding: a third variable (confounder) ex: correlation between coffee consumption and lung cancer. It seems there's a high correlation but no causation, only association. The causation is caused by a third variable (smoking) associated with coffee drinking and causating lung cancer.
 
  Design of experiments (DOE):
- Controlled experiments: divide the participants between Treatment group - apply changes and Control group - no changes. Compare between the effects to see if ther
+ 
+ Controlled experiments: 
+	 Divide the participants randomly between Treatment group - apply changes and Control group - no changes. Compare between the effects to see if there's a causation to be inferred.
+	Gold stardard of experiments will use:
+		Randomized controlled trial.
+		Placebo.
+		Double-blind trial: person administering doesn't know which group is the control.
+
+Observation study:
+	Participants assign themselves.
+	Studying lug cancer: you can not force people to start smoking.
+	Can't establish causation, only association.
+
+Longitudinal vs cross-sectional studies:
+	Longitudinal study: participants are followed over a period of time to examine effect of treatment on response.
+	Cross-sectional study: data on participants is collected from a single snapshot of time.
+	
