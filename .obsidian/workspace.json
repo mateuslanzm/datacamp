@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -151,13 +150,23 @@
               "icon": "lucide-list",
               "title": "Outline of Summary"
             }
+          },
+          {
+            "id": "83c02dfdb859948c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,7 +180,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ba4fdcddeb56230f",
+  "active": "e378dbdd8ae414af",
   "lastOpenFiles": [
     "2025-10-26.md",
     "Summary.md",
