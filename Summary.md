@@ -296,7 +296,7 @@ Longitudinal vs cross-sectional studies:
 
 ## 7 Introdução à Visualização de Dados com o Seaborn
 
-### Introduction to Seaborn
+### 7.01 Introduction to Seaborn
 
 Conceito: dataframe tighty: each observation has its own row and each variable has its own column.
 
@@ -314,7 +314,7 @@ Creating scatterplot with Seaborn:
 	hue_order=[value1,value2],
 	palette = hue_colors)
 
-### Visualizing Two Quantitative Variables
+### 7.02 Visualizing Two Quantitative Variables
 
 #### Gráficos e subgráficos relacionais
 
@@ -371,3 +371,12 @@ CI: it's a measure of an inference. The percentage in which if I repeat the expe
 
 CI: how confident is the mean I calculated?
 
+### 7.03 Visualizing a Categorical and a Quantitative Variable
+
+#### Categorical plots
+
+count plots: count a categorical variable
+	sns.catplot(x=x_axis, data=df, kind='count')
+
+bar plots: displays mean of quantitative variable per category
+	sns.catplot(x=x_axis, data=df, kind='bar')
