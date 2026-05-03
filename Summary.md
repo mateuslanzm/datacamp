@@ -380,3 +380,11 @@ count plots: count a categorical variable
 
 bar plots: displays mean of quantitative variable per category
 	sns.catplot(x=x_axis, data=df, kind='bar')
+
+#### Boxplot
+
+Distribution of quantitative data
+
+whiskers:
+
+	sns.catplot(x=x_axis,y=y_axis,data=df,kind='box',whis=[A,B])
