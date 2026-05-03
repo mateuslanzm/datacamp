@@ -382,9 +382,18 @@ bar plots: displays mean of quantitative variable per category
 	sns.catplot(x=x_axis, data=df, kind='bar')
 
 #### Boxplot
-
 Distribution of quantitative data
 
 whiskers:
 
 	sns.catplot(x=x_axis,y=y_axis,data=df,kind='box',whis=[A,B])
+
+#### Point plots
+Points the mean of a quantitative variable
+Point plot x line plot: 
+1 quantitative variable + 1 categorical variable x 2 quantitative variable
+Point plot x bar plot:
+Point plot is easier to compare between different groups, because they stand on the same X position.
+
+	sns.catplot(x=x_axis,y=y_axis,data=df,kind='point')
+
