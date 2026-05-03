@@ -397,3 +397,27 @@ Point plot is easier to compare between different groups, because they stand on 
 
 	sns.catplot(x=x_axis,y=y_axis,data=df,kind='point')
 
+To change the mean to the median, use arg:
+
+	sns.catplot(...,estimator=median)
+
+### 7.04 Customizing Seaborn Plots
+
+5 pre-set style: white, dark, whitegrid, darkgrid, ticks.
+
+	sns.set_style('pre-set')
+
+Pre-set palette:
+
+Diverging palettes: great for showing divergent data with a neutral point in the middle
+
+	sns.set_palette('RdBu")
+
+Sequential palettes: great for showing sequential
+
+	sns.set_palette('Blues')
+
+Changing scale:
+'paper', 'notebook', 'talk', 'poster'
+
+	sns.set_context()
