@@ -318,6 +318,7 @@ Creating scatterplot with Seaborn:
 
 #### Gráficos e subgráficos relacionais
 
+scatterplot: show relationship between two variables.
 relplot(): create relational plots: scatter or line plots. Big advantage over scatterplot(): create several subplots in a single image
 
 	sns.relplot(x=x_axis,
@@ -329,4 +330,20 @@ relplot(): create relational plots: scatter or line plots. Big advantage over sc
 	)
 	variable1 and 2 define the column and row of the subplots
 
+#### Personalização de gráficos de dispersão
 
+Changing point size:
+	sns.relplot(...,
+	size='val',
+	hue='val'
+	)
+
+Changing the point style:
+	sns.relplot(...,
+	style='val1')
+
+Transparency (when there're overlapping points):
+	sns.relplot(...,
+	alpha=0.4)
+
+#### Line plots
