@@ -292,4 +292,10 @@ Observation study:
 Longitudinal vs cross-sectional studies:
 	Longitudinal study: participants are followed over a period of time to examine effect of treatment on response.
 	Cross-sectional study: data on participants is collected from a single snapshot of time.
-	
+
+
+## 7 Introdução à Visualização de Dados com o Seaborn
+
+### Introduction to Seaborn
+
+Conceito: dataframe tighty: each observation has its own row and each variable has its own column.
