@@ -446,4 +446,13 @@ Axes Subplot:
 
 In a FacetGrid, to set titles for each subplot:
 
-	g.set_title(')
+	g.set_title('this is {col_name}')
+
+In FacetGrid and Subplots: adding axis labels:
+
+	g.set(xlabel='new X label',
+	ylabel='new Y label')
+
+Rotating x-axis tick labels
+
+	plt.xticks(rotation=90)
