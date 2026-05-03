@@ -313,3 +313,20 @@ Creating scatterplot with Seaborn:
 	hue=variable,
 	hue_order=[value1,value2],
 	palette = hue_colors)
+
+### Visualizing Two Quantitative Variables
+
+#### Gráficos e subgráficos relacionais
+
+relplot(): create relational plots: scatter or line plots. Big advantage over scatterplot(): create several subplots in a single image
+
+	sns.relplot(x=x_axis,
+	y=y_axis,
+	data= df,
+	kind='scatter' (or 'line'),
+	col = 'variable1',
+	row = 'variable2'
+	)
+	variable1 and 2 define the column and row of the subplots
+
+
