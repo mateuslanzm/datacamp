@@ -361,4 +361,13 @@ Replacing confidence interval with standard deviation:
 Turn off :
 	sns.relplot(...,errorbar=None)
 
-**Comment: 
+**Comment: what's the difference between standard deviation and confidence interval?
+
+SD: its a measure of the observations. It describes how disperse the observations are around the mean. It helps us to see the observation deviations.
+
+SD: how the data behave daily?
+
+CI: it's a measure of an inference. The percentage in which if I repeat the experiment, X% of the intervals would have the real value - mean. It doesn't mean there's a X% of chance that the mean is in the interval - the mean is or is not in the interval but if I repeat the same experience, X% of the interval will contain the true value. 
+
+CI: how confident is the mean I calculated?
+
