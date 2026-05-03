@@ -350,7 +350,13 @@ Transparency (when there're overlapping points):
 
 While scatterplot shows each plot point is an independent observation, line plots track the same "thing", tipically tracked over time.
 
-  sns.relplot(x=x_axis,y=y_axis,data=df,kind='line',style='val1',hue='val1',)
+	sns.relplot(x=x_axis,y=y_axis,data=df,kind='line',style='val1',hue='val1',)
 
 Multiple observations per x-value: by default it agreggates the values into a mean and shows the confidence interval on a shadded region.
-	assumes dataset is a random sample
+1. Assumes dataset is a random sample
+2. 95% confidence interval
+3. Indicates uncertainty
+Replacing confidence interval with standard deviation:
+	sns.relplot(..., errorbar='sd')
+Turn off :
+	sns.relplot(...,errorbar=None)
