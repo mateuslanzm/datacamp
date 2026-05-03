@@ -421,3 +421,29 @@ Changing scale:
 'paper', 'notebook', 'talk', 'poster'
 
 	sns.set_context()
+
+Adding titles and labels
+
+FacetGrid x AxesSubplot
+
+First to figure out: 
+
+	g = sns.catplot(x=x_axis,...)
+	type(g)
+
+FacetGrid - allows to create 1 or more axis of subplots - support subplots - relplot(), catplot().
+AxesSubPlot - single type functions, support only 1 plot - sns.scatterplot(), sns.boxplot(), ...
+
+Adding title: 
+
+FacetGrid:
+
+	g.figure.suptitle('new title', y='1.03' - a little higher)
+
+Axes Subplot:
+
+	g.set_title('new title',y=1.03)
+
+In a FacetGrid, to set titles for each subplot:
+
+	g.set_title(')
