@@ -299,3 +299,17 @@ Longitudinal vs cross-sectional studies:
 ### Introduction to Seaborn
 
 Conceito: dataframe tighty: each observation has its own row and each variable has its own column.
+
+Creating a count plot with Seaborn:
+	sns.countplot(x=x_axis,
+	data= df)
+Creating scatterplot with Seaborn:
+	hue_colors = {'yes':'black',
+	'no':'yellow'}
+	
+	sns.scatterplot(x=x_axis,
+	y=y_axis,
+	data= df
+	hue=variable,
+	hue_order=[value1,value2],
+	palette = hue_colors)
