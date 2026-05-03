@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Summary"
             }
+          },
+          {
+            "id": "ea3c8fbf44534c7d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,7 +193,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e378dbdd8ae414af",
+  "active": "ea3c8fbf44534c7d",
   "lastOpenFiles": [
     "2025-10-26.md",
     "Summary.md",
