@@ -472,3 +472,6 @@ enumerate(): count any iterable and returns pairs of the original iterable and t
 
 zip(): returns an iterable of tuples
 
+We can use zip(*zip()) to unpack the iterable, for instance:
+
+value1, value2 = zip(*zip())
