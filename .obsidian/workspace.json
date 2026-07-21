@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 328.5
   },
   "right": {
     "id": "b993df2b4924c3ae",
@@ -185,20 +185,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:Criar novo Canvas": false,
+      "bases:Criar nova base": false,
       "switcher:Abrir Quick Switcher": false,
       "graph:Abrir Visualização de diagrama de grafo": false,
       "daily-notes:Abrir nota de hoje": false,
       "templates:Inserir templates": false,
       "command-palette:Abrir paleta de comando": false,
-      "canvas:Create new canvas": false,
-      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "ea3c8fbf44534c7d",
   "lastOpenFiles": [
+    "README.md",
     "2025-10-26.md",
-    "Summary.md",
-    "README.md"
+    "Summary.md"
   ]
 }

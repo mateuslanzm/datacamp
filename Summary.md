@@ -456,3 +456,5 @@ In FacetGrid and Subplots: adding axis labels:
 Rotating x-axis tick labels
 
 	plt.xticks(rotation=90)
+
+## 8. Introduction to functions in Python
