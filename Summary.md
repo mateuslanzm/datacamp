@@ -457,4 +457,18 @@ Rotating x-axis tick labels
 
 	plt.xticks(rotation=90)
 
-## 8. Introduction to functions in Python
+## 8. Introduction to functions in Python (ignored)
+
+## 9. Toolbox in Python
+
+### 9.1 Using iterators in Pythonland:
+There're iterator and iterables:
+	iterables: objects to iterate on (lists, dictionaries, strings, ...)
+	iterator: the thing that's going to iterate. We can create it using iter() 
+
+range(n1, n2), creates a iterable over the numbers n1 and stopping on n2, not including the last one.
+
+enumerate(): count any iterable and returns pairs of the original iterable and the index of the value. We can use list to create a list of tuples of the pairs.
+
+zip(): returns an iterable of tuples
+
