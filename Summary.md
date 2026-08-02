@@ -487,13 +487,21 @@ Example:
 	total = sum(result)
 	print(total)
 
-## List comprehension and generators
+## 9.2 List comprehension and generators
 
-List comprehension examples:
+### List comprehension examples:
 
 simple for loop:
 	num = [num+1 for num in num_list]
 nested for loop:
 	pairs_2 = [(num1, num2) for num1 in range(0,2) for num2 in range(6,8)]
 creating a 5x5 matrix:
+	matrix = [[col for col in range(0,5)] for row in range(0,5)]
+conditional comprehensions:
+	list = [num**2 for num in range(0,6) if num % 2 == 0]
+conditional on the output expression:
+	[num**2 if num % 2 == 0 else 0 for num in range(10)]
+
+Dictionaries comprehensions:
+	pos_neg = {num: -num for num in range(9)}
 	
