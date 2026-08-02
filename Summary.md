@@ -488,3 +488,12 @@ Example:
 	print(total)
 
 ## List comprehension and generators
+
+List comprehension examples:
+
+simple for loop:
+	num = [num+1 for num in num_list]
+nested for loop:
+	pairs_2 = [(num1, num2) for num1 in range(0,2) for num2 in range(6,8)]
+creating a 5x5 matrix:
+	
