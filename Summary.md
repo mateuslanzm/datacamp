@@ -489,7 +489,7 @@ Example:
 
 ## 9.2 List comprehension and generators
 
-### List comprehension examples:
+### List and dictionary comprehension examples:
 
 simple for loop:
 	num = [num+1 for num in num_list]
@@ -504,4 +504,11 @@ conditional on the output expression:
 
 Dictionaries comprehensions:
 	pos_neg = {num: -num for num in range(9)}
-	
+
+### Generators:
+
+Change de [] for () and the generator is created. Unlike list comprehension it doesn't store the list in the memory.
+
+To define generator functions we change the return for yield.
+
+
