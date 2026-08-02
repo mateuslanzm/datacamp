@@ -482,7 +482,9 @@ Example:
 	
 	import pandas
 	result = []
-	for chunk in read_csv('table1.csv', chunksize=1000):
+	for chunk in pd.read_csv('table1.csv', chunksize=1000):
 		result.append(sum(chunk['x']))
 	total = sum(result)
 	print(total)
+
+## List comprehension and generators
