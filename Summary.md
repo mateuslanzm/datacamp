@@ -294,9 +294,9 @@ Longitudinal vs cross-sectional studies:
 	Cross-sectional study: data on participants is collected from a single snapshot of time.
 
 
-## 7 Introdução à Visualização de Dados com o Seaborn
+# 7 Introdução à Visualização de Dados com o Seaborn
 
-### 7.01 Introduction to Seaborn
+## 7.01 Introduction to Seaborn
 
 Conceito: dataframe tighty: each observation has its own row and each variable has its own column.
 
@@ -314,7 +314,7 @@ Creating scatterplot with Seaborn:
 	hue_order=[value1,value2],
 	palette = hue_colors)
 
-### 7.02 Visualizing Two Quantitative Variables
+## 7.02 Visualizing Two Quantitative Variables
 
 #### Gráficos e subgráficos relacionais
 
@@ -371,7 +371,7 @@ CI: it's a measure of an inference. The percentage in which if I repeat the expe
 
 CI: how confident is the mean I calculated?
 
-### 7.03 Visualizing a Categorical and a Quantitative Variable
+## 7.03 Visualizing a Categorical and a Quantitative Variable
 
 #### Categorical plots
 
@@ -401,7 +401,7 @@ To change the mean to the median, use arg:
 
 	sns.catplot(...,estimator=median)
 
-### 7.04 Customizing Seaborn Plots
+## 7.04 Customizing Seaborn Plots
 
 5 pre-set style: white, dark, whitegrid, darkgrid, ticks.
 
@@ -457,11 +457,11 @@ Rotating x-axis tick labels
 
 	plt.xticks(rotation=90)
 
-## 8. Introduction to functions in Python (ignored)
+# 8. Introduction to functions in Python (ignored)
 
-## 9. Toolbox in Python
+# 9. Toolbox in Python
 
-### 9.1 Using iterators in Pythonland:
+## 9.1 Using iterators in Pythonland:
 There're iterator and iterables:
 	iterables: objects to iterate on (lists, dictionaries, strings, ...)
 	iterator: the thing that's going to iterate. We can create it using iter() 
@@ -475,3 +475,14 @@ zip(): returns an iterable of tuples
 We can use zip(*zip()) to unpack the iterable, for instance:
 
 value1, value2 = zip(*zip())
+
+Where there's too much data to load at once, we can load the data using iterators. On pandas, we use the normal function read_csv() and specify the variable chunksize.
+
+Example:
+	
+	import pandas
+	result = []
+	for chunk in read_csv('table1.csv', chunksize=1000):
+		result.append(sum(chunk['x']))
+	total = sum(result)
+	print(total)
